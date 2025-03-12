@@ -1,0 +1,101 @@
+/* Styling the main ordered list */
+ol {
+    z-index: 2;
+    display: flex;
+    list-style: none;
+    background-color: beige;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling the list items */
+ol li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: auto; /* Set a width if needed */
+}
+
+/* Styling nested ordered lists */
+ol ol {
+    display: none;
+    position: absolute; /* Changed from relative to absolute */
+    padding: 0;
+    margin: 0;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+}
+
+/* Styling nested list items */
+ol ol li {
+    width: 100%;
+}
+
+/* Styling links */
+ol a {
+    text-decoration: none;
+    padding: 15px;
+    display: block;
+}
+
+/* Styling links on hover */
+ol li:hover > a {
+    color: black;
+}
+
+/* Styling nested links */
+ol ol a {
+    line-height: 120%;
+}
+
+/* Displaying nested lists on hover */
+ol li:hover > ol {
+    display: block;
+    width: max-content;
+}
+
+/* Hamburger menu button */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    ol {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    ol li {
+        width: 100%;
+    }
+
+    ol ol {
+        position: static;
+        transform: none;
+        left: 0;
+    }
+
+    ol li:hover > ol {
+        display: block;
+    }
+
+    ol li.open > ol {
+        display: block;
+    }
+}

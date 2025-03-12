@@ -1,24 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import {Routes, Route } from 'react-router-dom';
+import Index from './component/Index';
+import Silk from './component/Silk';
+import Cotton from './component/Cotton';
+import Lehenga from './component/Lehenga';
+import Salwar from './component/Salwar';
+import Regional from './component/Regional';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      
+      <Routes>
+          <Route path='/' element={<Index/>}/>
+          <Route path='/Silk' element={<Silk/>}/>
+          <Route path='/Cotton' element={<Cotton/>}/>
+          <Route path='/Lehenga' element={<Lehenga/>}/>
+          <Route path='/Salwar' element={<Salwar/>}/>
+          <Route path='/Regional' element={<Regional/>}/>
+        
+      </Routes>
   );
 }
 
