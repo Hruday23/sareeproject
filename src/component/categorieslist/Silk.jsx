@@ -5,13 +5,13 @@ import { regionalProducts } from '../products/Allproducts';
 import { salwarProducts } from '../products/Allproducts';
 import { cottonProducts } from '../products/Allproducts';
 import { silkProducts } from '../products/Allproducts';
-import { Silks } from '../Template/Alltempdetails';
-import Cattemplate from '../Template/Cattemplate';
-
+import Title from './Title';
 const Silk = () => {
   return (
     <div>
-        <Cattemplate cats={Silks} products={silkProducts}/>
+        
+    <Title/>
+    <ProductList products={silkProducts}/>
 </div>
   )
 }

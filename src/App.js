@@ -12,7 +12,6 @@ function App() {
     <>
     <ImpNav/>
       <Routes>
-
           <Route path='/' element={<Index/>}/>
           <Route path='/Silk' element={<Silk/>}/>
           <Route path='/Cotton' element={<Cotton/>}/>

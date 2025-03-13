@@ -5,7 +5,7 @@ const ProductList = ({ products }) => (
 
   <Row>
     {products.map((product, index) => (
-      <Col md={6} lg={4} key={index} className="mb-4">
+      <Col xs={12} sm={6} md={4} lg={3} key={index} className="mb-4">
         <Card>
           <Card.Img variant="top" src={`${process.env.PUBLIC_URL}/images/${product.image}`} alt={product.name} />
           <Card.Body>

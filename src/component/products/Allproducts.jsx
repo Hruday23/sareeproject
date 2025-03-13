@@ -1,5 +1,4 @@
 const cottonProducts = [
-  
   {
     image: "./2.jpg",
     name: "Cotton Saree 1",
@@ -11,6 +10,30 @@ const cottonProducts = [
     name: "Cotton Saree 2",
     description: "Stylish cotton saree.",
     price: "$90",
+  },
+  {
+    image: "./8.jpg",
+    name: "lehenga 1",
+    description: "Beautiful lehenga.",
+    price: "$150",
+  },
+  {
+    image: "lehenga2.jpg",
+    name: "lehenga 2",
+    description: "Elegant lehenga.",
+    price: "$180",
+  },
+  {
+    image: "./8.jpg",
+    name: "lehenga 1",
+    description: "Beautiful lehenga.",
+    price: "$150",
+  },
+  {
+    image: "lehenga2.jpg",
+    name: "lehenga 2",
+    description: "Elegant lehenga.",
+    price: "$180",
   },
 ];
 const lehengaProducts = [

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Card, Row, Col } from "react-bootstrap";
 import ProductList from '../products/ProductList';
-
+import Title from '../categorieslist/Title';
 const Cattemplate = ({ cats = [], products = [] }) => {
   return (
     <Row>
@@ -12,7 +12,7 @@ const Cattemplate = ({ cats = [], products = [] }) => {
         <Col key={index}>
            
           <Card>
-            <h1>{cat.title}</h1>
+            <Title/>
             <ProductList products={products} />
             
           </Card>

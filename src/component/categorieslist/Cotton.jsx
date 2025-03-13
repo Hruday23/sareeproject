@@ -7,12 +7,13 @@ import { cottonProducts } from '../products/Allproducts';
 import { silkProducts } from '../products/Allproducts';
 import { Cottons } from '../Template/Alltempdetails';
 import Cattemplate from '../Template/Cattemplate';
+import Title from './Title';
 const Cotton = () => {
   return (
     <div>
-    <Cattemplate cats={Cottons} products={cottonProducts} />
-   
-    
+       <Title/>
+       <ProductList products={cottonProducts}/>
+       
   </div>
   )
 }

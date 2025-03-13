@@ -8,11 +8,12 @@ import { silkProducts } from '../products/Allproducts';
 import { Regionals } from '../Template/Alltempdetails';
 import Cattemplate from '../Template/Cattemplate';
 import Lehenga from './Lehenga';
-
+import Title from './Title';
 const Regional = () => {
   return (
     <div>
-      <Cattemplate cats={Regionals} products={regionalProducts}/>
+       <Title/>
+       <ProductList products={regionalProducts}/>
     </div>
   )
 }
