@@ -1,6 +1,5 @@
-
-
 const cottonProducts = [
+  
   {
     image: "./2.jpg",
     name: "Cotton Saree 1",
@@ -13,18 +12,17 @@ const cottonProducts = [
     description: "Stylish cotton saree.",
     price: "$90",
   },
-
 ];
 const lehengaProducts = [
   {
     image: "./8.jpg",
-    name: "Regional 1",
+    name: "lehenga 1",
     description: "Beautiful lehenga.",
     price: "$150",
   },
   {
     image: "lehenga2.jpg",
-    name: "Regional 2",
+    name: "lehenga 2",
     description: "Elegant lehenga.",
     price: "$180",
   },
@@ -58,9 +56,24 @@ const silkProducts = [
   },
 ];
 const regionalProducts = [
-    { image: './8.jpg', name: 'Regional 1', description: 'Beautiful lehenga.', price: '$150' },
-    { image: 'lehenga2.jpg', name: 'Regional 2', description: 'Elegant lehenga.', price: '$180' }
-  ];
+  {
+    image: "./8.jpg",
+    name: "Regional 1",
+    description: "Beautiful lehenga.",
+    price: "$150",
+  },
+  {
+    image: "lehenga2.jpg",
+    name: "Regional 2",
+    description: "Elegant lehenga.",
+    price: "$180",
+  },
+];
 
-  export { cottonProducts, lehengaProducts, salwarProducts, silkProducts, regionalProducts };
-
+export {
+  cottonProducts,
+  lehengaProducts,
+  salwarProducts,
+  silkProducts,
+  regionalProducts,
+};

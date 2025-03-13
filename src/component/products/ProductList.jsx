@@ -1,9 +1,8 @@
 import React from "react";
-import { Card, Row, Col } from "react-bootstrap";
-
-
+import {  Card, Row, Col } from "react-bootstrap";
 
 const ProductList = ({ products }) => (
+
   <Row>
     {products.map((product, index) => (
       <Col md={6} lg={4} key={index} className="mb-4">
@@ -18,6 +17,7 @@ const ProductList = ({ products }) => (
       </Col>
     ))}
   </Row>
+  
 );
 
 export default ProductList;

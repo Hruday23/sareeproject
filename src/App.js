@@ -1,16 +1,18 @@
-
+import ImpNav from './component/Nav';
 import './App.css';
-import {Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Index from './component/Index';
-import Silk from './component/Silk';
-import Cotton from './component/Cotton';
-import Lehenga from './component/Lehenga';
-import Salwar from './component/Salwar';
-import Regional from './component/Regional';
+import  Silk  from './component/categorieslist/Silk';
+import  Cotton  from './component/categorieslist/Cotton';
+import Lehenga  from './component/categorieslist/Lehenga';
+import Salwar from './component/categorieslist/Salwar';
+import Regional from './component/categorieslist/Regional';
 function App() {
   return (
-      
+    <>
+    <ImpNav/>
       <Routes>
+
           <Route path='/' element={<Index/>}/>
           <Route path='/Silk' element={<Silk/>}/>
           <Route path='/Cotton' element={<Cotton/>}/>
@@ -19,6 +21,9 @@ function App() {
           <Route path='/Regional' element={<Regional/>}/>
         
       </Routes>
+    
+      </>
+     
   );
 }
 

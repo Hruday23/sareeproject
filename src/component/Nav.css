@@ -99,3 +99,9 @@ ol li:hover > ol {
         display: block;
     }
 }
+.bi{
+    padding-right: 5px;
+}
+.bi:hover{
+    color: red;
+}

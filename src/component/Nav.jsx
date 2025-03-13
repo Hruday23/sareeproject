@@ -13,9 +13,9 @@ function Navone() {
     <Navbar className="bg-body-tertiary">
       <Navbar.Brand href="/" className='m-auto'>Brandname</Navbar.Brand>
       <Nav>
-        <Nav.Link> <i className="bi bi-cart"></i></Nav.Link>
-        <Nav.Link><i className='bi bi-heart'></i></Nav.Link>
-        <Nav.Link><i className='bi bi-person'></i></Nav.Link>
+      <Link to="/"><i className="bi bi-cart"></i></Link>
+      <Link to="/"><i className="bi bi-heart"></i></Link>
+      <Link to="/"><i className="bi bi-person"></i></Link>
       </Nav>
     </Navbar>
   );
