@@ -10,6 +10,7 @@ const Cart = () => {
 
   return (
     <div>
+<<<<<<< HEAD
     <h1>Cart</h1>
     {notification && <Alert variant="success">{notification}</Alert>}
     <Row>
@@ -23,6 +24,9 @@ const Cart = () => {
                 alt={product.name}
                 style={{ width: "150px", height: "150px", objectFit: "cover" }}
               />
+=======
+     
+>>>>>>> 1a31cd6fc62783d00ab188c2f9c5f660e961c891
               <Card.Body>
                 <Card.Title>{product.name}</Card.Title>
                 <Card.Text>{product.description}</Card.Text>
