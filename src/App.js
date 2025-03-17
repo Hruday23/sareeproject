@@ -15,10 +15,12 @@ import Login from './component/categorieslist/Login';
 import { CartProvider } from './component/categorieslist/CartContext';
 import CartModal from './component/categorieslist/CartModal';
 import Cart from './component/categorieslist/Cart';
+import Footer from './component/Footer'
 
 function App() {
   return (
     <AuthProvider>
+     
       <CartProvider>
         <ImpNav />
         <CartModal />
@@ -33,6 +35,7 @@ function App() {
           <Route path='/cart' element={<Cart />} />
         </Routes>
       </CartProvider>
+      <Footer/>
     </AuthProvider>
   );
 }

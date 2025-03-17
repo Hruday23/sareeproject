@@ -10,6 +10,7 @@ export const useCart = () => useContext(CartContext);
 export const CartProvider = ({ children }) => {
   const [cart, setCart] = useState([]);
   const [showModal, setShowModal] = useState(false);
+  const [notification, setNotification] = useState('');
 
   const addToCart = (product) => {
     setCart((prevCart) => {
@@ -24,7 +25,9 @@ export const CartProvider = ({ children }) => {
         return [...prevCart, { ...product, quantity: 1 }];
       }
     });
+    setNotification(`${product.name} has been added to the cart`);
     setShowModal(true);
+    setTimeout(() => setNotification(''), 1000);
   };
 
   const removeFromCart = (product) => {
