@@ -15,7 +15,7 @@ const ProductList = ({ products }) => {
           <Card className="hover-card">
             <Card.Img
               variant="top"
-              src={`${process.env.PUBLIC_URL}/images/${product.image}`}
+              src={` /images/${product.image}`}
               alt={product.name}
               style={{ width: "100%", height: "350px", objectFit: "cover" }}
             />
