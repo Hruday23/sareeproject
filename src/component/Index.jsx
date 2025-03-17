@@ -1,6 +1,8 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css';
+
 import Carousel from 'react-bootstrap/Carousel';
+import Features from './categorieslist/Features';
 const Index = () => {
   return (
     <div style={{ display: 'block', padding: 30 }}>
@@ -22,6 +24,7 @@ const Index = () => {
 
     </Carousel.Item>
     </Carousel>
+    <Features/>
     </div>
   )
 }
