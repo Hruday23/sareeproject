@@ -35,7 +35,6 @@ function Login() {
 
     // Simulate login logic
     login(email);
-    navigate('/');
   };
 
   return (

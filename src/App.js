@@ -15,12 +15,12 @@ import Login from './component/categorieslist/Login';
 import { CartProvider } from './component/categorieslist/CartContext';
 import CartModal from './component/categorieslist/CartModal';
 import Cart from './component/categorieslist/Cart';
-import Footer from './component/Footer'
+import Footer from './component/Footer';
+import Buy from './component/categorieslist/Buy'; // Import the Buy component
 
 function App() {
   return (
     <AuthProvider>
-     
       <CartProvider>
         <ImpNav />
         <CartModal />
@@ -33,9 +33,10 @@ function App() {
           <Route path='/Regional' element={<Regional />} />
           <Route path='/login' element={<Login />} />
           <Route path='/cart' element={<Cart />} />
+          <Route path='/buy' element={<Buy />} /> {/* Add the Buy route */}
         </Routes>
+        <Footer />
       </CartProvider>
-      <Footer/>
     </AuthProvider>
   );
 }

@@ -36,8 +36,8 @@ const Description = () => {
                         <img src={selectedItem.image} alt={selectedItem.name} className="img-fluid" />
                     </div>
                     <div className="col-md-8">
-                        <h2>{selectedItem.name}</h2>
-                        <p>{selectedItem.description}</p>
+                        <h2>&nbsp; &nbsp;{selectedItem.name}</h2>
+                        <p> &nbsp; {selectedItem.description}</p>
                         <p>MRP ₹{selectedItem.price}</p>
                         <p>Tax included.</p>
                         <div>

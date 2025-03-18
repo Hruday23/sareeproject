@@ -36,7 +36,7 @@ const Index = () => {
             </div>
           </div>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={1500}>
           <div style={{ position: 'relative' }}>
             <img
               className="d-block w-100"
